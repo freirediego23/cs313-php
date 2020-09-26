@@ -1,0 +1,104 @@
+body {
+
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    text-align: left;
+  
+  }
+
+  .name {
+    color: #2b2e4a;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    line-height: 2;
+  }
+
+  .job {
+    color: #2b2e4a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2;
+  }
+  
+  .button1 {
+    margin-top: 50px;
+  }
+  
+  h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  p {
+    line-height: 2;
+  }
+  
+  a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #EAE6E6;
+  }
+  
+  .top-container {
+    background-color: #cadefc;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+  }
+  
+  
+  .top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+  }
+  
+  .bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+  }
+
+  /*ASSIGNMENT CONTAINER BOX ****/
+
+  .chart {
+    display: block;
+  
+    
+  }
+
+  .box1 {
+    background-color: #defcf9;
+    height: 200px;
+
+    width: 200px;
+    text-align: center;
+    
+    /* vertical-align: middle; */
+    
+  }
+
+  
+  
+  /*FOOTER ***************/
+
+  footer p{
+    background-color: #c3bef0;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  
+  
+  
