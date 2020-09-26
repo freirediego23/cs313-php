@@ -14,9 +14,18 @@
     <main>
         <div class="chart">
             <div class="row">
-            <div class="box1 col-4">Project #1</div>
-            <div class="box1 col-4">Project #2</div>
-            <div class="box1 col-4">Project #3</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
+            <div class="box1 col-4">Project Coming Soon!</div>
             </div>
         </div>
 </main>
