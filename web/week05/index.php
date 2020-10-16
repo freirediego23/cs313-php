@@ -1,8 +1,15 @@
 <?php
 
-require ('dbconnect.php');
+try {
+	require ('dbconnect.php');
+	$db = get_db();
+}
+catch (Exception $ex) {
+	echo "$ex";
+  }
 
-$db = get_db();
+
+
 
 
 
