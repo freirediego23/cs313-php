@@ -11,22 +11,21 @@
 </head>
 <body>
 
-	<h2 class="center_h">Online Meeting Agenda</h2>
-	<br>
-	<div id="main">
+	<h1 class="center_h">Scheduled Messages</h1>
+    <p class="center_p">Check out what every message schedule is about.</p>
+    <!--Display database message with their dates list here -->
+	<div id="wrap">
 		
 	
 		
-			<a href="member.php"><div id="box1"><h4>Member List</h4></div></a>
-			<a href="messages.php"><div id="box2"><h4>Scheduled Messages</h4></div></a>
-			<a href="#"><div id="box4"><h4>Updates(Coming Soon)</h4></div></a>
+			
 		
 		
 
 	</div>
 
 
-
+	<a href="index.php"><button type="button" class="btn btn-success">Confirm</button></a>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
