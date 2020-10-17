@@ -26,12 +26,12 @@
           $statement = $db->prepare('Select * from member');
           $statement->execute();
           while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-			$firstname = $row['FirstName'];
-			$lastname = $row['LastName'];
-			$emailaddress = $row['EmailAddress'];
-			echo "<p> $firstname <p>";
-			echo "<p> $lastname <p>";
-			echo "<p> $firstname <p>";
+			$FirstName = $row['FirstName'];
+			$LastName = $row['LastName'];
+			$EmailAddress = $row['EmailAddress'];
+			echo "<p> $FirstName <p>";
+			echo "<p> $LastName <p>";
+			echo "<p> $EmailAddress <p>";
           }
         } catch (Exception $ex) {
           echo "$ex";
