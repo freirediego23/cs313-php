@@ -16,28 +16,8 @@
 </head>
 <body>
 
-	<h1 class="center_h">Scheduled Messages</h1>
-    <p class="center_p">Check out what every message schedule is about.</p>
-    <!--Display database message with their dates list here -->
-	<div id="wrap">
-		
+<?php
 	
-	<?php
-	// try {
-		  
-    //       $statement = $db->prepare('Select * from topic, sacrament_meeting');
-    //       $statement->execute();
-    //       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-	// 		$speakingorder = $row['speakingorder'];
-	// 		$sundaydate = $row['sundaydate'];
-	// 		$descr = $row['descr'];
-	// 		echo "<p> $speakingorder <p>";
-	// 		echo "<p> $sundaydate <p>";
-	// 		echo "<p> $descr <p>";
-    //       }
-    //     } catch (PDOException $ex) {
-    //       echo "$ex";
-	// 	}
 		
 	try {
 		  
@@ -65,6 +45,43 @@
 
 		
 		?>
+
+	<h1 class="center_h">Scheduled Messages</h1>
+    <p class="center_p">Check out what every message schedule is about.</p>
+    <!--Display database message with their dates list here -->
+	<div id="wrap">
+		<div class="container">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Message Order</th>
+						<th>Message Date</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><?php $speakingorder ?></td>
+						<td><?php $speakingorder ?></td>
+						
+					</tr>
+					<tr>
+						<td>Date 1</td>
+						<td>Date 2</td>
+						<td>Date 3</td>
+					</tr>
+					<tr>
+						<td>Description 1</td>
+						<td>Description 2</td>
+						<td>Description 3</td>
+					</tr>
+				</tbody>
+			
+			</table>
+		
+		</div>
+	
+	
 			
 		
 			
