@@ -41,7 +41,7 @@
 		
 	try {
 		  
-		$statement = $db->prepare('Select speakingorder, sundaydate, descr from topic');
+		$statement = $db->prepare('Select * from topic, sacrament_meeting');
 		$statement->execute();
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 		  $speakingorder = $row['speakingorder'];
