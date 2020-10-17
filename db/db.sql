@@ -11,9 +11,9 @@ Descr	varchar(250)
 
 INSERT INTO topic (Descr)
 	VALUES ('The first message will be about fasting and preparing');
-
-INSERT INTO topic (Descr)
 	VALUES ('The second message will be about the book of mormon');
+
+	
 
 
 CREATE TABLE member (
@@ -27,9 +27,9 @@ EmailAddress	varchar(100)
 
 INSERT INTO member (FirstName, LastName, EmailAddress)
 	VALUES ('Juan', 'Garcia', 'juang@gmail.com');
-
-INSERT INTO member (FirstName, LastName, EmailAddress)
 	VALUES ('John', 'Rain', 'johnrain@gmail.com');
+
+	
 
 
 CREATE TABLE sacrament_meeting (
