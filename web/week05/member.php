@@ -16,10 +16,23 @@
     <!--Display database member list here -->
 	<div id="wrap">
 		
-	
-		
+	<?php
+	try {
+          $statement = $db->prepare('Select * from member');
+          $statement->execute();
+          while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+			$firstname = $row['firstname'];
+			$lastname = $row['lastname'];
+			$emailaddress = $row['emailaddress'];
+			echo "<p> $firstname <p>";
+			echo "<p> $lastname <p>";
+			echo "<p> $firstname <p>";
+          }
+        } catch (Exception $ex) {
+          echo "$ex";
+        }
 			
-
+		?>
 	</div>
 
 
