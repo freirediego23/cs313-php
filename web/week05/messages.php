@@ -39,7 +39,9 @@
           echo "$ex";
 		}
 		
-		$db->query('SELECT * FROM topic, sacrament_meeting') as $row
+		$statement2 = $db->query('Select * from topic, sacrament_meeting');
+		$statement2 = execute();
+		$row2 = $statement2->fetch(PDO::FETCH_ASSOC)
 			
 			echo 'Speaking Order: ' . $row['speakingorder'];
 			echo ' sundaydate: ' . $row['sundaydate'];
