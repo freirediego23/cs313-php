@@ -39,18 +39,10 @@
           echo "$ex";
 		}
 		
-		$statement2 = $db->query('Select * from topic, sacrament_meeting');
-		$statement2 = execute();
-		$row2 = $statement2->fetch(PDO::FETCH_ASSOC)
+		
 			
-			echo 'Speaking Order: ' . $row2['speakingorder'];
-			echo ' sundaydate: ' . $row2['sundaydate'];
-			echo ' descr: ' . $row2['descr'];
-			echo '<br/>';
-			
-
-
-			
+		
+		
 		?>
 			
 		
