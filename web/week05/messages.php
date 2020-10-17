@@ -63,27 +63,33 @@
 					<tr>
 						<td><?php 
 						
-						$statement = $db->prepare('Select * from sacrament_meeting');
-						$statement->execute();
-						while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-						$speakingorder = $row['speakingorder'];
-						echo $speakingorder;
+						$statement = $db->query('Select * from sacrament_meeting');
+						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						{
+							echo 'Description: ' . $row['descr'] . '<br/>';
 						}
 						
 						
 						?></td>
-						<td><?php $speakingorder ?></td>
+						<td><?php $statement = $db->query('Select * from sacrament_meeting');
+									while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+									{
+										echo 'Description: ' . $row['descr'] . '<br/>';
+									}
+						
+						
+						?></td>
 						
 					</tr>
 					<tr>
 						<td>Date 1</td>
 						<td>Date 2</td>
-						<td>Date 3</td>
+						
 					</tr>
 					<tr>
 						<td>Description 1</td>
 						<td>Description 2</td>
-						<td>Description 3</td>
+						
 					</tr>
 				</tbody>
 			
