@@ -61,8 +61,14 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>order 1</td>
-						<td>order 2</td>
+					<?php 
+						$statement = $db->query('Select * from sacrament_meeting');
+						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						{
+						  echo '<td>' . $row['speakingorder'] . '</td>';
+						  
+						}
+						?>
 					</tr>
 					
 					<tr>
