@@ -1,6 +1,6 @@
 <?php
 	
-	include 'dbconnect.php';
+	require 'dbconnect.php';
 	get_db();
 ?>
 <html lang="en">
