@@ -31,9 +31,7 @@
 			$speakingorder = $row['speakingorder'];
 			$sundaydate = $row['sundaydate'];
 			$descr = $row['descr'];
-			echo "<p> $speakingorder <p>";
-			echo "<p> $sundaydate <p>";
-			echo "<p> $descr <p>";
+			
           }
         } catch (PDOException $ex) {
           echo "$ex";
