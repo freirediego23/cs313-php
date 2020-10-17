@@ -43,9 +43,9 @@
 		$statement2 = execute();
 		$row2 = $statement2->fetch(PDO::FETCH_ASSOC)
 			
-			echo 'Speaking Order: ' . $row['speakingorder'];
-			echo ' sundaydate: ' . $row['sundaydate'];
-			echo ' descr: ' . $row['descr'];
+			echo 'Speaking Order: ' . $row2['speakingorder'];
+			echo ' sundaydate: ' . $row2['sundaydate'];
+			echo ' descr: ' . $row2['descr'];
 			echo '<br/>';
 			
 
