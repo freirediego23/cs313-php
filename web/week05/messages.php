@@ -41,13 +41,14 @@
 		
 	try {
 		  
-		$statement = $db->prepare('Select * from topic, sacrament_meeting');
+		$statement = $db->prepare('Select * from sacrament_meeting');
 		$statement->execute();
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 		  $speakingorder = $row['speakingorder'];
 		  $sundaydate = $row['sundaydate'];
-		  $descr = $row['descr'];
-		  echo "<p> $speakingorder <p>";
+		  
+		  echo "<p> Speaking Order: $speakingorder <p>";
+		  echo "<p> Sunday Date: $sundaydate <p>";
 		  
 		}
 	  } catch (PDOException $ex) {
@@ -55,10 +56,10 @@
 	  }
 			
 		
-	  $statement = $db->query('Select * from sacrament_meeting');
+	  $statement = $db->query('Select * from topic');
 	  while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	  {
-		echo 'user: ' . $row['speakingorder'] . ' password: ' . $row['sundaydate'] .'<br/>';
+		echo 'Description: ' . $row['descr'] . '<br/>';
 	  }
 
 
