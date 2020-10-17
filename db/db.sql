@@ -47,10 +47,10 @@ FOREIGN KEY (topicid) REFERENCES Topic(topicid)
 
 
 INSERT INTO sacrament_meeting (SundayDate, SpeakingOrder)
-	VALUES ('2020-05-28', 1);
+VALUES 
+('2020-05-28', 1),
+('2020-10-14', 2);
 
-INSERT INTO sacrament_meeting (SundayDate, SpeakingOrder)
-	VALUES ('2020-10-14', 2);
 
 
 
