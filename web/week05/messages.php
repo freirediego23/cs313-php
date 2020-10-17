@@ -61,29 +61,13 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><?php 
-						
-						$statement = $db->query('Select * from sacrament_meeting');
-						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-						{
-							echo 'Description: ' . $row['descr'] . '<br/>';
-						}
-						
-						
-						?></td>
-						<td><?php $statement = $db->query('Select * from sacrament_meeting');
-									while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-									{
-										echo 'Description: ' . $row['descr'] . '<br/>';
-									}
-						
-						
-						?></td>
+						<td>order 1</td>
 						
 					</tr>
+					<tr>order 2</tr>
 					<tr>
-						<td>Date 1</td>
-						<td>Date 2</td>
+						<td><?php $sundaydate ?></td>
+						<td><?php $sundaydate ?></td>
 						
 					</tr>
 					<tr>
