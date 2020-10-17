@@ -23,7 +23,7 @@
 		
 	<?php
 	try {
-          $statement = $db->query('SELECT * FROM member');
+          $statement = $db->prepare('Select * from member');
           $statement->execute();
           while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$FirstName = $row['FirstName'];
@@ -33,7 +33,7 @@
 			echo "<p> $LastName <p>";
 			echo "<p> $EmailAddress <p>";
           }
-        } catch (Exception $ex) {
+        } catch (PDOException $ex) {
           echo "$ex";
         }
 			
