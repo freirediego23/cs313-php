@@ -71,7 +71,7 @@
 						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
 						  echo '<td>' . $row['descr'] . '</td>';
-						  echo '<td>' . $row['descr'] . '</td>';
+						  
 						}
 						?>
 						
