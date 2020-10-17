@@ -65,7 +65,7 @@
 						$statement = $db->query('Select * from sacrament_meeting');
 						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
-						  echo '<td>' . $row['speakingorder'] . '</td>';
+						  echo '<tr>' . $row['speakingorder'] . '</tr>';
 						  
 						}
 						?>
