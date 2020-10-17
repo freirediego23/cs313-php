@@ -55,10 +55,10 @@
 	  }
 			
 		
-	  $statement = $db->query('Select * from sacrament_meeting, topic');
+	  $statement = $db->query('Select * from sacrament_meeting');
 	  while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	  {
-		echo 'user: ' . $row['speakingorder'] . ' password: ' . $row['sundaydate'] . $row['descr'] .'<br/>';
+		echo 'user: ' . $row['speakingorder'] . ' password: ' . $row['sundaydate'] .'<br/>';
 	  }
 
 
