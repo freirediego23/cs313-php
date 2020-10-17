@@ -56,7 +56,7 @@
 	  }
 			
 		
-	  $statement = $db->query('SELECT * FROM topic, sacrament_meeting');
+	  $statement = $db->query('Select * from sacrament_meeting s1 LEFT JOIN topic t1 ON s1.id = s1.id');
 	  while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	  {
 		echo 'user: ' . $row['speakingorder'] . ' password: ' . $row['sundaydate'] . $row['descr'] .'<br/>';
