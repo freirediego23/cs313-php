@@ -24,7 +24,7 @@
 	<?php
 	try {
 		  
-          $statement = $db->prepare('Select * from member')
+          $statement = $db->prepare('Select * from member');
           $statement->execute();
           while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$FirstName = $row['FirstName'];
