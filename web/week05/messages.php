@@ -66,7 +66,18 @@
 					</tr>
 					
 					<tr>
-						<?php 
+					<?php 
+						$statement = $db->query('Select * from sacrament_meeting');
+						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						{
+						  echo '<td>' . $row['sundaydate'] . '</td>';
+						  
+						}
+						?>
+						
+					</tr>
+					<tr>
+					<?php 
 						$statement = $db->query('Select * from topic');
 						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
@@ -74,11 +85,6 @@
 						  
 						}
 						?>
-						
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
 						
 					</tr>
 				</tbody>
