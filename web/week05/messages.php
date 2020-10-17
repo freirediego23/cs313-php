@@ -23,23 +23,37 @@
 		
 	
 	<?php
+	// try {
+		  
+    //       $statement = $db->prepare('Select * from topic, sacrament_meeting');
+    //       $statement->execute();
+    //       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+	// 		$speakingorder = $row['speakingorder'];
+	// 		$sundaydate = $row['sundaydate'];
+	// 		$descr = $row['descr'];
+	// 		echo "<p> $speakingorder <p>";
+	// 		echo "<p> $sundaydate <p>";
+	// 		echo "<p> $descr <p>";
+    //       }
+    //     } catch (PDOException $ex) {
+    //       echo "$ex";
+	// 	}
+		
 	try {
 		  
-          $statement = $db->prepare('Select * from topic, sacrament_meeting');
-          $statement->execute();
-          while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-			$speakingorder = $row['speakingorder'];
-			$sundaydate = $row['sundaydate'];
-			$descr = $row['descr'];
-			echo "<p> $speakingorder <p>";
-			echo "<p> $sundaydate <p>";
-			echo "<p> $descr <p>";
-          }
-        } catch (PDOException $ex) {
-          echo "$ex";
+		$statement = $db->prepare('Select * from topic, sacrament_meeting');
+		$statement->execute();
+		while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+		  $speakingorder = $row['$speakingorder'];
+		  $sundaydate = $row['sundaydate'];
+		  $descr = $row['descr'];
+		  echo "<p> $speakingorder <p>";
+		  echo "<p> $sundaydate <p>";
+		  echo "<p> $descr <p>";
 		}
-		
-		
+	  } catch (PDOException $ex) {
+		echo "$ex";
+	  }
 			
 		
 		
