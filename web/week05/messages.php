@@ -39,13 +39,13 @@
           echo "$ex";
 		}
 		
-		foreach ($db->query('SELECT * FROM topic, sacrament_meeting') as $row)
-			{
+		$db->query('SELECT * FROM topic, sacrament_meeting') as $row
+			
 			echo 'Speaking Order: ' . $row['speakingorder'];
 			echo ' sundaydate: ' . $row['sundaydate'];
 			echo ' descr: ' . $row['descr'];
 			echo '<br/>';
-			}
+			
 
 
 			
