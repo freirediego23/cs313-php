@@ -61,7 +61,17 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><?php $speakingorder ?></td>
+						<td><?php 
+						
+						$statement = $db->prepare('Select * from sacrament_meeting');
+						$statement->execute();
+						while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+						$speakingorder = $row['speakingorder'];
+						echo $speakingorder;
+						}
+						
+						
+						?></td>
 						<td><?php $speakingorder ?></td>
 						
 					</tr>
