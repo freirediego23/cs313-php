@@ -10,8 +10,9 @@ Descr	varchar(250)
 );
 
 INSERT INTO topic (Descr)
-	VALUES ('The first message will be about fasting and preparing');
-	VALUES ('The second message will be about the book of mormon');
+VALUES 
+('The first message will be about fasting and preparing'),
+('The second message will be about the book of mormon');
 
 	
 
@@ -26,8 +27,9 @@ EmailAddress	varchar(100)
 );
 
 INSERT INTO member (FirstName, LastName, EmailAddress)
-	VALUES ('Juan', 'Garcia', 'juang@gmail.com');
-	VALUES ('John', 'Rain', 'johnrain@gmail.com');
+VALUES 
+('Juan', 'Garcia', 'juang@gmail.com'),
+('John', 'Rain', 'johnrain@gmail.com');
 
 	
 
