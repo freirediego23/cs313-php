@@ -1,7 +1,7 @@
 <?php
 	
 	include 'dbconnect.php';
-	$db = get_db();
+	
 ?>
 <html lang="en">
 <head>
@@ -23,6 +23,7 @@
 		
 	<?php
 	try {
+		  $db = get_db();
           $statement = $db->prepare('Select * from member');
           $statement->execute();
           while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
