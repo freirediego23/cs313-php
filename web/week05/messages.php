@@ -1,3 +1,8 @@
+<?php
+	
+	include 'dbconnect.php';
+	$db = get_db();
+?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -17,11 +22,27 @@
 	<div id="wrap">
 		
 	
-		
+	<?php
+	try {
+		  
+          $statement = $db->prepare('Select * from topic, sacrament_meeting');
+          $statement->execute();
+          while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+			$speakingorder = $row['speakingorder'];
+			$sundaydate = $row['sundaydate'];
+			$descr = $row['descr'];
+			echo "<p> $speakingorder <p>";
+			echo "<p> $sundaydate <p>";
+			echo "<p> $descr <p>";
+          }
+        } catch (PDOException $ex) {
+          echo "$ex";
+        }
+			
+		?>
 			
 		
-		
-
+			
 	</div>
 
 
