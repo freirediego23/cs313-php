@@ -62,12 +62,18 @@
 				<tbody>
 					<tr>
 						<td>order 1</td>
-						
+						<td>order 2</td>
 					</tr>
-					<tr>order 2</tr>
+					
 					<tr>
-						<td><?php $sundaydate ?></td>
-						<td><?php $sundaydate ?></td>
+						<?php 
+						$statement = $db->query('Select * from topic');
+						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						{
+						  echo '<td>' . $row['descr'] . '</td>';
+						  echo '<td>' . $row['descr'] . '</td>';
+						}
+						?>
 						
 					</tr>
 					<tr>
