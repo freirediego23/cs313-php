@@ -63,7 +63,7 @@
 					<tr>
 					<?php 
 						$statement = $db->query('Select * from sacrament_meeting');
-						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
 						  echo '<td>' . $row['speakingorder'] . '</td>';
 						  
@@ -74,7 +74,7 @@
 					<tr>
 					<?php 
 						$statement = $db->query('Select * from sacrament_meeting');
-						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
 						  echo '<td>' . $row['sundaydate'] . '</td>';
 						  
