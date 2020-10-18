@@ -48,7 +48,7 @@
 			echo 'Description: ' . $row['descr'] . '<br/>';
 		}
 		?>	
-		
+		<br>
 		<a href="index.php"><button type="button" class="btn btn-success">Go back</button></a>		
 	</div>
 
