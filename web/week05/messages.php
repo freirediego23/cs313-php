@@ -34,15 +34,6 @@
 			$sundaydate = $row['sundaydate'];
 			
 			echo "<p> Speaking Order: $speakingorder <p>";
-
-
-			$statement = $db->query('Select * from topic');
-			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-			{
-				echo 'Description: ' . $row['descr'] . '<br/>';
-			}
-
-
 			echo "<p> Sunday Date: $sundaydate <p>";
 			
 			}
@@ -51,7 +42,11 @@
 		}
 				
 			
-		
+		$statement = $db->query('Select * from topic');
+		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+		{
+			echo 'Description: ' . $row['descr'] . '<br/>';
+		}
 		?>	
 		
 			
