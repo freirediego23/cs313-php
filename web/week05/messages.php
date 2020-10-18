@@ -77,7 +77,7 @@
 						$statement = $db->query('Select * from sacrament_meeting');
 						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
 						{
-						  echo '<td>' . $row['speakingorder'] . '</td>';
+						  echo '<td>' . $row['speakingorder'][1] . '</td>';
 						  
 						}
 						?>
