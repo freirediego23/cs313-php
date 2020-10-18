@@ -16,107 +16,38 @@
 </head>
 <body>
 
-<?php
-	
-		
-	try {
-		  
-		$statement = $db->prepare('Select * from sacrament_meeting');
-		$statement->execute();
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-		  $speakingorder = $row['speakingorder'];
-		  $sundaydate = $row['sundaydate'];
-		  
-		  echo "<p> Speaking Order: $speakingorder <p>";
-		  echo "<p> Sunday Date: $sundaydate <p>";
-		  
-		}
-	  } catch (PDOException $ex) {
-		echo "$ex";
-	  }
-			
-		
-	  $statement = $db->query('Select * from topic');
-	  while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	  {
-		echo 'Description: ' . $row['descr'] . '<br/>';
-	  }
-
-
-		
-		?>
 
 	<h1 class="center_h">Scheduled Messages</h1>
     <p class="center_p">Check out what every message schedule is about.</p>
     <!--Display database message with their dates list here -->
 	<div id="wrap">
-		<div class="container">
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>Message Order</th>
-						<th>Message Date</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-					<?php 
-						$statement = $db->query('Select * from sacrament_meeting');
-						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
-						{
-						  echo '<td>' . $row['speakingorder'] . '</td>';
-						  
-						}
-						?>
-					</tr>
-					
-					<tr>
-
-					<?php 
-						$statement = $db->query('Select * from sacrament_meeting');
-						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
-						{ $row2 = $row['speakingorder'];
-						  echo '<td>' . $row2 . '</td>';
-						  
-						}
-						?>
-					
-						
-					</tr>
-					<tr>
-
-					<?php 
-						$statement = $db->query('Select * from sacrament_meeting');
-						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
-						{
-						  echo '<td>' . $row['sundaydate'] . '</td>';
-						  
-						}
-						?>
-					
-						
-					</tr>
-
-					<tr>
-					<?php 
-						$statement = $db->query('Select * from topic');
-						while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-						{
-						  echo '<td>' . $row['descr'] . '</td>';
-						  
-						}
-						?>
-					
-					</tr>
-				</tbody>
-			
-			</table>
+		<br>
+		<?php
 		
-		</div>
-	
-	
 			
+		try {
+			
+			$statement = $db->prepare('Select * from sacrament_meeting');
+			$statement->execute();
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+			$speakingorder = $row['speakingorder'];
+			$sundaydate = $row['sundaydate'];
+			
+			echo "<p> Speaking Order: $speakingorder <p>";
+			echo "<p> Sunday Date: $sundaydate <p>";
+			
+			}
+		} catch (PDOException $ex) {
+			echo "$ex";
+		}
+				
+			
+		$statement = $db->query('Select * from topic');
+		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+		{
+			echo 'Description: ' . $row['descr'] . '<br/>';
+		}
+		?>	
 		
 			
 	</div>
