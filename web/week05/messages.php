@@ -72,6 +72,20 @@
 					</tr>
 					
 					<tr>
+
+					<?php 
+						$statement = $db->query('Select * from sacrament_meeting');
+						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
+						{
+						  echo '<td>' . $row['speakingorder'] . '</td>';
+						  
+						}
+						?>
+					
+						
+					</tr>
+					<tr>
+
 					<?php 
 						$statement = $db->query('Select * from sacrament_meeting');
 						if ($row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -80,8 +94,10 @@
 						  
 						}
 						?>
+					
 						
 					</tr>
+
 					<tr>
 					<?php 
 						$statement = $db->query('Select * from topic');
@@ -91,7 +107,7 @@
 						  
 						}
 						?>
-						
+					
 					</tr>
 				</tbody>
 			
